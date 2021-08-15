@@ -17,7 +17,6 @@ class BZN_dataset(Dataset):
             self.waveArr = glob(wavepath)[:9900]
         else:
             self.waveArr = glob(wavepath)[9900:]
-        self.waveArr = glob(wavepath)
 
     def __len__(self):
         return len(self.waveArr)
